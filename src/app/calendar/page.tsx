@@ -147,13 +147,13 @@ export default function CalendarPage() {
                 <label className="grid gap-1 text-base text-ink-100">
                   <span>Kind</span>
                   <select
-                    className="h-11 rounded-2xl bg-bg-950/40 border border-border px-3 text-ink-50 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
+                    className="h-11 rounded-2xl bg-white border border-border px-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
                     value={eventKind}
                     onChange={(e) => setEventKind(e.target.value as CalendarEvent["kind"])}
                   >
-                    <option value="important">Important</option>
-                    <option value="interview">Interview</option>
-                    <option value="schedule">Schedule</option>
+                    <option value="important" className="bg-white text-slate-900">Important</option>
+                    <option value="interview" className="bg-white text-slate-900">Interview</option>
+                    <option value="schedule" className="bg-white text-slate-900">Schedule</option>
                   </select>
                 </label>
               </div>

@@ -76,12 +76,12 @@ export default function AddPage() {
               <label className="grid gap-1 text-base text-ink-100">
                 <span>Subject</span>
                 <select
-                  className="h-11 rounded-2xl bg-bg-950/40 border border-border px-3 text-ink-50 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
+                  className="h-11 rounded-2xl bg-white border border-border px-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                 >
                   {subjects.map((s) => (
-                    <option key={s} value={s}>
+                    <option key={s} value={s} className="bg-white text-slate-900">
                       {s}
                     </option>
                   ))}
@@ -91,12 +91,12 @@ export default function AddPage() {
               <label className="grid gap-1 text-base text-ink-100">
                 <span>Type</span>
                 <select
-                  className="h-11 rounded-2xl bg-bg-950/40 border border-border px-3 text-ink-50 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
+                  className="h-11 rounded-2xl bg-white border border-border px-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
                   value={type}
                   onChange={(e) => setType(e.target.value as ItemType)}
                 >
                   {types.map((t) => (
-                    <option key={t} value={t}>
+                    <option key={t} value={t} className="bg-white text-slate-900">
                       {t}
                     </option>
                   ))}
@@ -121,12 +121,12 @@ export default function AddPage() {
               <label className="grid gap-1 text-base text-ink-100">
                 <span>Difficulty</span>
                 <select
-                  className="h-11 rounded-2xl bg-bg-950/40 border border-border px-3 text-ink-50 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
+                  className="h-11 rounded-2xl bg-white border border-border px-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-ink-500/40"
                   value={difficulty}
                   onChange={(e) => setDifficulty(e.target.value as Difficulty)}
                 >
                   {difficulties.map((d) => (
-                    <option key={d} value={d}>
+                    <option key={d} value={d} className="bg-white text-slate-900">
                       {d}
                     </option>
                   ))}

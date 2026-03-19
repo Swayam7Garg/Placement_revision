@@ -9,7 +9,8 @@ import { Button, cn } from "@/components/ui";
 const nav = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/add", label: "Add" },
-  { href: "/calendar", label: "Calendar" }
+  { href: "/calendar", label: "Calendar" },
+  { href: "/schedule", label: "Daily" }
 ];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
